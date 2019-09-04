@@ -77,10 +77,10 @@ class Owner
         dog.owner = nil
       end
     end
-    Dog.all.each do |dog|  
-      if dog.owner == self 
-        dog.mood = "nervous"
-        dog.owner = nil
+    Cat.all.each do |cat|  
+      if cat.owner == self 
+        cat.mood = "nervous"
+        cat.owner = nil
       end
     end
   end 
