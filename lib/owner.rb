@@ -71,7 +71,18 @@ class Owner
   end 
   
   def sell_pets 
-    
+    Dog.all.each do |dog|  
+      if dog.owner == self 
+        dog.mood = "nervous"
+        dog.owner = nil
+      end
+    end
+    Dog.all.each do |dog|  
+      if dog.owner == self 
+        dog.mood = "nervous"
+        dog.owner = nil
+      end
+    end
   end 
   
 end
